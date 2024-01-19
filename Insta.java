@@ -22,9 +22,9 @@ public class Insta
         ob.user="J K Rowling";
         ob.post=6;
         ob.comment=423;
-        ob.user="MRADUL";
-        ob.post=8;
-        ob.comment=33;
+        ob2.user="MRADUL";
+        ob2.post=8;
+        ob2.comment=33;
         ob.details();
         ob2.details();
     }

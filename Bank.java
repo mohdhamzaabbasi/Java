@@ -22,9 +22,9 @@ public class Bank
         ob.account=434545334;
         ob.customer="J K Rowling";
         ob.transaction=4353423;
-        ob.account=3434224;
-        ob.customer="MRADUL";
-        ob.transaction=394873;
+        ob2.account=3434224;
+        ob2.customer="MRADUL";
+        ob2.transaction=394873;
         ob.details();
         ob2.details();
     }

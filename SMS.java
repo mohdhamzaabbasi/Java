@@ -22,9 +22,9 @@ public class SMS
         ob.student="Mayank";
         ob.course="EM-II";
         ob.teacher="B S Veena";
-        ob.student="Mradul";
-        ob.course="EM-III";
-        ob.teacher="Ram Kishun Lodhi";
+        ob2.student="Mradul";
+        ob2.course="EM-III";
+        ob2.teacher="Ram Kishun Lodhi";
         ob.details();
         ob2.details();
     }

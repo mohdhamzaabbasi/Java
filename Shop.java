@@ -22,9 +22,9 @@ public class Shop
         ob.product="Facewash";
         ob.customer="Maynk";
         ob.orderid=4;
-        ob.product="Goodday";
-        ob.customer="Mradul";
-        ob.orderid=56;
+        ob2.product="Goodday";
+        ob2.customer="Mradul";
+        ob2.orderid=56;
         ob.details();
         ob2.details();
     }
