@@ -1,31 +1,33 @@
-public class Person
-{
-    String name;
-    int age;
-    String gender;
-    Person()
-    {
-        name="";
-        age=0;
-        gender="";
+public class Person {
+    private int age;
+
+    public Person(int initialAge) {
+        if (initialAge < 0) {
+            System.out.println("Age is not valid, setting age to 0.");
+            this.age = 0;
+        } else {
+            this.age = initialAge;
+        }
     }
-    void details()
-    {
-        System.out.println(this.name);
-        System.out.println(this.age);
-        System.out.println(this.gender);
+
+    public void yearPasses() {
+        this.age++;
     }
-    public static void main(String[]args)
-    {
-        Person ob=new Person();
-        Person ob2=new Person();
-        ob.name="Sushi";
-        ob.age=14;
-        ob.gender="female";
-        ob2.name="Sushank";
-        ob2.age=13;
-        ob2.gender="male";
-        ob.details();
-        ob2.details();
+
+    public void amIOld() {
+        if (age < 13) {
+            System.out.println("You are young.");
+        } else if (age >= 13 && age < 18) {
+            System.out.println("You are a teenager.");
+        } else {
+            System.out.println("You are old.");
+        }
+    }
+
+    public static void main(String[] args) {
+        Person person1 = new Person(15);
+        person1.amIOld();
+        person1.yearPasses();
+        person1.amIOld();
     }
 }
